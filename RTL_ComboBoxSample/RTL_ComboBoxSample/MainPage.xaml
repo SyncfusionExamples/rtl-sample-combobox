@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+             x:Class="RTL_ComboBoxSample.MainPage">
+
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40"  FlowDirection="RightToLeft"  x:Name="comboBox">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Adam</x:String>
+                    <x:String>Aaron</x:String>
+                    <x:String>Alex</x:String>
+                    <x:String>Carrey</x:String>
+                    <x:String>Daniel</x:String>
+                    <x:String>Guptil</x:String>
+                    <x:String>Hentry</x:String>
+                    <x:String>James</x:String>
+                    <x:String>Kevin</x:String>
+                    <x:String>Kabil</x:String>
+                    <x:String>Mark</x:String>
+                    <x:String>Mathew</x:String>
+                    <x:String>Nelson</x:String>
+                    <x:String>Nancy</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+    </StackLayout>
+
+
+</ContentPage>
